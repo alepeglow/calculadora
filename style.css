@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+main .calc{
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 30px;
+    width: 400px;
+}
+
+main input{
+    border: none;
+    width: 100%;
+    height: 4rem;
+    background-color: transparent;
+    font-size: 48px;
+    direction: rtl; /* right to left */
+    
+}
+
+main .display-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 1rem 0;
+}
+/* Y <> X  quando tem dois número no padding ou margin*/
+
+main .display-icons .icons-left img{
+    
+    padding-right: 1rem;
+}
+
+main .display-icons .icons-rigth img{
+  
+    padding-left: 1rem;
+}
+
+
+main .calc .grid-keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    height: auto;
+}
+
+main .calc .grid-item{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    font-size: 30px !important;
+    padding: 1rem !important;
+    width: 50px !important;
+    cursor: pointer;
+
+}
+
+main .calc .btn-clear{
+    background-color: #FF5959 !important;
+    color: #fff !important;
+}
+
+main .calc .btn-options{
+    background-color: #F0F0F0 !important;
+    color: #66FF7F !important;
+}
+
+main .calc .btn-main{
+    background-color: #F0F0F0 !important;
+    color: #000 !important;
+}
+
+main .calc .btn-result{
+    background-color: #66FF7F !important;
+    color: #fff !important;
+}
+
+
+main .calc .footer-info{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+main .calc .footer-line{
+    height: 4px;
+    width: 140px;
+    border-radius: 40px;
+
+    margin: 1rem 0;
+    background-color: #000000;
+    border: none;
+}
+
+main .calc .footer-info p{
+    font-size: 20px;
+}
